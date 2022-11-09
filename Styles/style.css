@@ -1,24 +1,30 @@
 @font-face {
     font-family: '8bitoperator';
-    src: url(./Fuente/8bitoperator.ttf);
+    src: url(../Font/8bitoperator.ttf);
 }
 
 body {
-    background-image: url(./img/mariobros.png);
+    background-image: url(../Images/fondo-principal.png);
     background-size: cover;
     font-family: '8bitoperator';
 }
 
 h1 {
     text-align: center;
-    font-size: 2,8rem;
+    font-size: 2, 8rem;
     margin-top: 4rem;
     color: black;
 }
 
-.row-one, .row-two{
+.row-one,
+.row-two {
     display: flex;
     justify-content: center;
+}
+
+.row-two a {
+    text-decoration: none;
+    color: #000000;   
 }
 
 .buttons {
@@ -30,44 +36,46 @@ h1 {
     align-items: center;
 }
 
-.buttons h2{
+.buttons h2 {
     font-size: 25px;
 }
 
-.button-plus{
-    background-image: url(img/hongo.png);
+.button-plus {
+    background-image: url(../Images/hongo.png);
     background-size: 15rem 15rem;
     background-repeat: no-repeat;
     width: 15rem;
     height: 15rem;
 }
 
-.button-minus{
-    background-image: url(img/bloquepregunta.png);
+.button-minus {
+    background-image: url(../Images/bloquepregunta.png);
     background-size: 15rem 15rem;
     background-repeat: no-repeat;
     width: 15rem;
     height: 15rem;
 }
 
-.button-multiplication{
-    background-image: url(img/bloqueladrillo.png);
-    background-size: 15rem 15rem;
-    background-repeat: no-repeat;
-    width: 15rem;
-    height: 15rem;
-}
- .button-division{
-    background-image: url(img/estrella.png);
+.button-multiplication {
+    background-image: url(../Images/bloqueladrillo.png);
     background-size: 15rem 15rem;
     background-repeat: no-repeat;
     width: 15rem;
     height: 15rem;
 }
 
-.buttons:hover{
+.button-division {
+    background-image: url(../Images/estrella.png);
+    background-size: 15rem 15rem;
+    background-repeat: no-repeat;
+    width: 15rem;
+    height: 15rem;
+}
+
+.buttons:hover {
     color: #228B22;
-    box-shadow: 0 4px 16px #000000	;
+    box-shadow: 0 4px 16px #000000;
     transition: all 0.2s ease;
     transform: translateY(-1rem);
 }
+
