@@ -12,13 +12,7 @@ html, body {
 
 body {
     background-image: url(../Images/fondo-principal.png);
-}
-
-h1 {
-    text-align: center;
-    font-size: 2.8rem;
-    margin-top: 4rem;
-    color: black;
+    background-position: center;
 }
 
 .row-one,

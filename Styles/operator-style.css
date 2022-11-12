@@ -1,0 +1,15 @@
+.operation {
+    display: flex;
+    justify-content: center;
+}
+
+.operation input {
+    margin: 0 2rem;
+    background-color: white;
+}
+
+.operation h2 {
+    font-size: x-large;
+    color: white;
+    -webkit-text-stroke: 1px black;
+}
