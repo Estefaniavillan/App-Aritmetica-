@@ -1,8 +1,6 @@
 body {
     background-image: url(../Images/fondo-multiplication.jpg);
-    background-size: cover;
-    font-family: '8bitoperator';
-    }
+}
 
 h1 {
     text-align: center;
@@ -10,4 +8,40 @@ h1 {
     margin-top: 4rem;
     color: white;
     -webkit-text-stroke: 1px black;
+}
+
+.operation {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    bottom: 50%;
+}
+
+.operation input {
+    margin: auto 2rem;
+}
+
+.numeric-keyboard {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    padding: auto 10rem;
+}
+
+.numeric-keyboard input {
+    font-family: '8bitoperator';
+    font-size: x-large;
+    cursor: pointer;
+    padding: 3rem;
+    border-radius: 25%;
+}
+
+.numeric-keyboard input:hover {
+    color: #8b2222;
+    box-shadow: 0 4px 16px #000000;
+    transition: all 0.2s ease;
+    transform: translateY(-1rem);
 }

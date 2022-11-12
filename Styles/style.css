@@ -7,6 +7,8 @@ body {
     background-image: url(../Images/fondo-principal.png);
     background-size: cover;
     font-family: '8bitoperator';
+    margin: 0rem;
+    padding: 0rem;
 }
 
 h1 {
