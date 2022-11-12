@@ -1,0 +1,30 @@
+.numeric-keyboard {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 5rem 10rem;
+}
+
+.numeric-keyboard input {
+    font-family: '8bitoperator';
+    background-image: url(../Images/numeric-button.png);
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    border-color: transparent;
+    width: 10rem;
+    font-size: x-large;
+    cursor: pointer;
+    padding: 3rem;
+    border-radius: 25%;
+}
+
+.numeric-keyboard .delete {
+    width: 12rem;
+}
+
+.numeric-keyboard input:hover {
+    color: #8b2222;
+    transition: all 0.2s ease;
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem #5e5e5e);
+    transform: translateY(-1rem);
+}
