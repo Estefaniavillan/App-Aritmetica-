@@ -1,57 +1,33 @@
-var x, y;
-var intentos = 3;
-
 function cleanFields() {
     document.getElementById("value1").value = ''
     document.getElementById("value2").value = ''
-    document.getElementById("product").value = ''
+    document.getElementById("result").value = ''
 }
 
 function cleanAnswer() {
-    document.getElementById("product").value = ''
+    document.getElementById("result").value = ''
 }
-
-
-
-function generateNumbers() {
-    function getRandom() {
-        return Math.floor((Math.random() * 11));
-    }
-    x = getRandom();
-    y = getRandom();
-}
-
-function genPregunta() {
-    generateNumbers();
-    document.getElementById('value1').innerText = x;
-    document.getElementById('value2').innerText = y;
-}
-
-function contadorVidas() {
-    //document.getElementById('vidas').value = intentos;
-}
-
 
 function chequearRespuesta() {
-    intentos--;
+    lives--;
     var message = "";
     let result = x - y
-    if (intentos > 0) {
-        if (result === +document.getElementById('product').value) {
+    if (lives >= 0) {
+        if (result === +document.getElementById('result').value) {
             message = "Felicitaciones, la respuesta es correcta!";
-            intentos = 3;
-            genPregunta()
+            lives = 3;
+            genQuestion()
         }
         else {
-            message = "La respuesta no es correcta, intentos restantes" + intentos;
+            message = "La respuesta no es correcta, intentos restantes " + lives;
         }
     } else {
         message = "¡Fallaste!,  la respuesta correcta es: " + result;
 
-        intentos = 3;
-        genPregunta()
+        lives = 3;
+        genQuestion()
     }
-    contadorVidas();
+    contLives();
     alert(message);
     cleanAnswer();
 }

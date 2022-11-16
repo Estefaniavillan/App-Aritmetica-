@@ -12,13 +12,19 @@
     <link rel="stylesheet" href="../Styles/operator-style.css">
     <link rel="stylesheet" href="../Styles/numeric-keyboard-style.css">
     <script src="../js/minus.js"></script>
+    <script src="../js/question.js"></script>
+    <script src="../js/cont-lives.js"></script>
     <script src="../js/numeric-keyboard.js"></script>
     <title>Resta</title>
 </head>
 
 <body>
     <header>
-        <h1>Juguemos a Restar</h1>
+        <div id="live">
+            <img src="../Images/mario-live.png">
+            <h3 id="lives">x3</h3>
+        </div>
+        <h1>Vamos a restar</h1>
         <a href="../index.html">
             <img src="../Images/back-button.png" alt="Back button">
         </a>
@@ -51,7 +57,7 @@
         <input type="button" class="delete" value="Listo" id="listo" onclick="validateOperation()">      
     </div>
     <script>
-        genPregunta() 
+        genQuestion() 
     </script>
 </body>
 

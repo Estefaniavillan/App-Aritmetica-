@@ -5,6 +5,26 @@ header {
     padding-top: 1rem;
 }
 
+#live {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2rem;
+}
+
+#live img{
+    width: 5rem;
+    height: 5rem;
+    margin-right: 0;
+}
+
+#live h3{
+    text-align: center;
+    font-size: 2.5rem;
+    color: black;
+}
+
 h1 {
     text-align: center;
     font-size: 2.8rem;
@@ -20,6 +40,6 @@ header img {
 }
 
 header img:hover {
-    filter: drop-shadow(0.2rem 0.2rem 0.2rem #5e5e5e);
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem black);
     transform: translateY(-1rem);
 }

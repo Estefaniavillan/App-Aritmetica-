@@ -12,13 +12,19 @@
     <link rel="stylesheet" href="../Styles/operator-style.css">
     <link rel="stylesheet" href="../Styles/numeric-keyboard-style.css">
     <script src="../js/multiplication.js"></script>
+    <script src="../js/question.js"></script>
+    <script src="../js/cont-lives.js"></script>
     <script src="../js/numeric-keyboard.js"></script>
     <title>Vamos a multiplicar</title>
 </head>
 
 <body>
     <header>
-        <h1>Juguemos a Multiplicar</h1>
+        <div id="live">
+            <img src="../Images/mario-live.png">
+            <h3 id="lives">x3</h3>
+        </div>
+        <h1>Vamos a multiplicar</h1>
         <a href="../index.html">
             <img src="../Images/back-button.png" alt="Back button">
         </a>
@@ -34,7 +40,6 @@
         </div>
 
         <span id="msj" class="msj">¡Excelente!</span>
-
     </div>
 
     <div class="numeric-keyboard">
@@ -53,7 +58,7 @@
 
     </div>
     <script>
-        genPregunta() 
+        genQuestion() 
     </script>
 </body>
 

@@ -39,7 +39,7 @@ body {
     font-size: 25px;
 }
 
-.button-suma {
+.button-plus {
     background-image: url(../Images/hongo.png);
     background-size: 15rem 15rem;
     background-repeat: no-repeat;
@@ -47,7 +47,7 @@ body {
     height: 15rem;
 }
 
-.button-resta {
+.button-minus {
     background-image: url(../Images/bloquepregunta.png);
     background-size: 15rem 15rem;
     background-repeat: no-repeat;

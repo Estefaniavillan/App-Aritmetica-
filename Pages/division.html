@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,17 +12,24 @@
     <link rel="stylesheet" href="../Styles/operator-style.css">
     <link rel="stylesheet" href="../Styles/numeric-keyboard-style.css">
     <script src="../js/division.js"></script>
+    <script src="../js/question.js"></script>
+    <script src="../js/cont-lives.js"></script>
     <script src="../js/numeric-keyboard.js"></script>
     <title>Juguemos a dividir</title>
 </head>
+
 <body>
     <header>
+        <div id="live">
+            <img src="../Images/mario-live.png">
+            <h3 id="lives">x3</h3>
+        </div>
         <h1>Vamos a dividir</h1>
         <a href="../index.html">
             <img src="../Images/back-button.png" alt="Back button">
         </a>
     </header>
-    
+
     <div class="board">
         <div class="operation">
             <h3 id="value1"></h3>
@@ -32,7 +40,6 @@
         </div>
 
         <span id="msj" class="msj">¡Excelente!</span>
-
     </div>
     <div class="numeric-keyboard">
         <input type="button" class="number" value="0" id="zero" onclick="putValue('zero')">
@@ -45,11 +52,12 @@
         <input type="button" class="number" value="7" id="seven" onclick="putValue('seven')">
         <input type="button" class="number" value="8" id="eight" onclick="putValue('eight')">
         <input type="button" class="number" value="9" id="nine" onclick="putValue('nine')">
-        <input type="button" class="delete" value="Borrar" id="delete"onclick= "deleteValue()">
-        <input type="button" class="delete" value="Listo" id="listo" onclick="validateOperation()">  
+        <input type="button" class="delete" value="Borrar" id="delete" onclick="deleteValue()">
+        <input type="button" class="delete" value="Listo" id="listo" onclick="validateOperation()">
     </div>
     <script>
-        genPregunta() 
+        genQuestion() 
     </script>
 </body>
+
 </html>

@@ -11,50 +11,16 @@ h1 {
     text-align: center;
 }
 
-.operation h2 {
-    color: black !important;
-    -webkit-text-stroke: 1px white !important;
-}
 .board {
     background-color: rgba(202, 236, 235, 0.5);
-    max-width: 700px;
-    margin: auto;
-    border: 2px solid #000;
-    display: flex; 
-    flex-direction: column;
-    padding: 5rem 2rem;
-    border-radius: 4%;
+}
 
-}
-.operation{
-    display: flex;
-    align-items: center;
-}
 .board .msj{
     color: rgb(0, 0, 0);
     -webkit-text-stroke: 2px black;
-}
-.board h3 {
-    font-size: 5rem;
-}
-
-.board input {
-    height: 5rem;
-
 }
 
 .msj {
     font-size: 40px;
     height: 50px;
-}
-
-.opcion {
-    width: 80px;
-    height: 80px;
-    border: 1px solid#000;
-    font-size: 50px;
-    margin-bottom: 20px;
-    border-radius: 50%;
-    cursor: pointer;
-    background-color: blue;
 }
