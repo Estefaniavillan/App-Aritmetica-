@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../Images/luigi-face.ico">
+    <link rel="shortcut icon" href="../Images/yoshi-face.ico">
     <link rel="stylesheet" href="../Styles/style.css">
     <link rel="stylesheet" href="../Styles/header-style.css">
-    <link rel="stylesheet" href="../Styles/multiplication-style.css">
+    <link rel="stylesheet" href="../Styles/plus-style.css">
     <link rel="stylesheet" href="../Styles/operator-style.css">
     <link rel="stylesheet" href="../Styles/numeric-keyboard-style.css">
-    <script src="../js/multiplication.js"></script>
+    <script src="../js/plus.js"></script>
     <script src="../js/numeric-keyboard.js"></script>
-    <title>Vamos a multiplicar</title>
+    <title>Suma</title>
 </head>
 
 <body>
     <header>
-        <h1>Juguemos a Multiplicar</h1>
+        <h1>Juguemos a sumar</h1>
         <a href="../index.html">
             <img src="../Images/back-button.png" alt="Back button">
         </a>
@@ -27,7 +27,7 @@
     <div class="board">
         <div class="operation">
             <h3 id="value1"></h3>
-            <h3>*</h3>
+            <h3>+</h3>
             <h3 id="value2"></h3>
             <h3>=</h3>
             <input type="number" id="result" disabled>
@@ -36,7 +36,6 @@
         <span id="msj" class="msj">¡Excelente!</span>
 
     </div>
-
     <div class="numeric-keyboard">
         <input type="button" class="number" value="0" id="zero" onclick="putValue('zero')">
         <input type="button" class="number" value="1" id="one" onclick="putValue('one')">
@@ -50,7 +49,6 @@
         <input type="button" class="number" value="9" id="nine" onclick="putValue('nine')">
         <input type="button" class="delete" value="Borrar" id="delete"onclick= "deleteValue()">
         <input type="button" class="delete" value="Listo" id="listo" onclick="validateOperation()">
-
     </div>
     <script>
         genPregunta() 

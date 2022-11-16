@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=
+    , initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia" />
+  <script src="calculadora.js"></script>
+
+</head>
+
+<body>
+
+  <h1>Divide las siguientes operaciones:</h1>
+  <form name="myForm" id="myForm" action="#">
+    <input id="vidas" type="number" value="3" disabled />
+    <label> Vidas</label>
+    <hr />
+    <input id="divisor" name="divisor" type="number" disabled />
+    <label> Multiplicado por: </label>
+    <input id="dividendo" name="dividendo" type="number" disabled />
+    <hr />
+    <label></label>
+    <input id="respuesta" name="respuesta" type="number" placeholder="Ingresa tu respuesta" required />
+    <hr />
+
+    <button class="button" name="button" type="button" onclick="chequearRespuesta()">
+      Chequear respuesta
+    </button>
+
+
+
+  </form>
+
+
+</body>
+<script>
+  genPregunta() 
+</script>
+
+</html>
