@@ -15,6 +15,6 @@ function deleteValue() {
 }
 
 function validateOperation() {
-    chequearRespuesta()
+    checkResponse()
 
 }
