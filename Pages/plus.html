@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../Styles/plus-style.css">
     <link rel="stylesheet" href="../Styles/operator-style.css">
     <link rel="stylesheet" href="../Styles/numeric-keyboard-style.css">
+    <script src="../js/sounds.js"></script>
     <script src="../js/plus.js"></script>
     <script src="../js/question.js"></script>
     <script src="../js/cont-lives.js"></script>
@@ -30,6 +31,10 @@
             <img src="../Images/back-button.png" alt="Back button">
         </a>
     </header>
+
+    <audio id="audio" src="../Sounds/intro-mario.mp3" loop></audio>
+    <audio id="game-over" src="../Sounds/game-over.mpeg"></audio>
+    <audio id="winner" src="../Sounds/winner.mpeg"></audio>
 
     <div class="board">
         <div class="operation">
@@ -53,11 +58,12 @@
         <input type="button" class="number" value="7" id="seven" onclick="putValue('seven')">
         <input type="button" class="number" value="8" id="eight" onclick="putValue('eight')">
         <input type="button" class="number" value="9" id="nine" onclick="putValue('nine')">
-        <input type="button" class="delete" value="Borrar" id="delete"onclick= "deleteValue()">
+        <input type="button" class="delete" value="Borrar" id="delete" onclick="deleteValue()">
         <input type="button" class="delete" value="Listo" id="listo" onclick="validateOperation()">
     </div>
     <script>
-        generateValues(false) 
+        generateValues(false)
+        play() 
     </script>
 </body>
 

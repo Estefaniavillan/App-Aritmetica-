@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../Styles/division-style.css">
     <link rel="stylesheet" href="../Styles/operator-style.css">
     <link rel="stylesheet" href="../Styles/numeric-keyboard-style.css">
+    <script src="../js/sounds.js"></script>
     <script src="../js/division.js"></script>
     <script src="../js/question.js"></script>
     <script src="../js/cont-lives.js"></script>
@@ -30,6 +31,10 @@
             <img src="../Images/back-button.png" alt="Back button">
         </a>
     </header>
+
+    <audio id="audio" src="../Sounds/intro-mario.mp3" loop></audio>
+    <audio id="game-over" src="../Sounds/game-over.mpeg"></audio>
+    <audio id="winner" src="../Sounds/winner.mpeg"></audio>
 
     <div class="board">
         <div class="operation">
@@ -61,6 +66,7 @@
     </div>
     <script>
         generateValues(true)
+        play()
     </script>
 </body>
 

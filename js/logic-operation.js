@@ -27,6 +27,8 @@ function checkResponse() {
         message = "¡Bien hecho!";
         lives = 3;
         hiddenNumericKeyboard()
+        stop()
+        winner()
     } else {
         lives--;
         message = "La respuesta es incorrecta, inténtalo de nuevo"
@@ -37,6 +39,8 @@ function checkResponse() {
     if (lives === 0) {
         message = "GAME OVER\n La respuesta correcta es: " + result;
         hiddenNumericKeyboard()
+        stop()
+        gameOver()
     }
     showMessage(message)
 }
