@@ -5,7 +5,7 @@
     margin: 0 5rem 10rem;
 }
 
-.numeric-keyboard input {
+.numeric-keyboard input, #refresh {
     font-family: '8bitoperator';
     background-image: url(../Images/numeric-button.png);
     background-size: cover;
@@ -28,4 +28,11 @@
     transition: all 0.2s ease;
     filter: drop-shadow(0.2rem 0.2rem 0.2rem #5e5e5e);
     transform: translateY(-1rem);
+}
+
+#refresh {
+    align-self: center;
+    display: none;
+    width: 17rem;
+    margin: 2rem;
 }

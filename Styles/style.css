@@ -11,6 +11,9 @@ html, body {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-image: url(../Images/fondo-principal.png);
     background-position: center;
 }

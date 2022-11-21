@@ -1,60 +1,58 @@
-function cleanFields() {
-    document.getElementById("value1").value = ''
-    document.getElementById("value2").value = ''
-    document.getElementById("result").value = ''
-}
+var isVisibleHelpImage=false;
 
 function cleanAnswer() {
     document.getElementById("result").value = ''
 }
 
+function getUserResult() {
+    let result = document.getElementById("result").value;
+    if (result === '') {
+        return 0.0
+    } else {
+        return parseFloat(result)
+    }
+}
+
+function showMessage(message) {
+    let elementMessage = document.getElementById("msj");
+    elementMessage.hidden = false
+    elementMessage.innerText = message
+}
+
 function checkResponse() {
     var message = ""
     let result = getOperation()
-    let resultUser = document.getElementById("result").value;
-    if (result == resultUser) {
+    let resultUser = getUserResult()
+    if (result === resultUser) {
         message = "¡Bien hecho!";
         lives = 3;
+        hiddenNumericKeyboard()
     } else {
         lives--;
         message = "La respuesta es incorrecta, inténtalo de nuevo"
         cleanAnswer()
         contLives()
+        showDecimalExplanation()
     }
-    if (lives == 0){
+    if (lives === 0) {
         message = "GAME OVER\n La respuesta correcta es: " + result;
+        hiddenNumericKeyboard()
     }
+    showMessage(message)
+}
 
-    document.getElementById("msj").innerText = message;
-
-
-
-
-
-
-
-
-
-
-/*
-    lives--;
-    var message = "";
-    if (lives >= 0) {
-        if (result === +document.getElementById('result').value) {
-            message = "Felicitaciones, la respuesta es correcta!";
-            lives = 3;
-            generateValues()
+function showDecimalExplanation() {
+    isVisibleHelpImage = !isVisibleHelpImage
+    let decimalImage = document.getElementById('decimal-explanation')
+    let help = document.getElementById('help')
+    if (decimalImage != null) {
+        if (isVisibleHelpImage) {
+            decimalImage.style.display = 'block'
+            help.style.display = 'block'
+            help.innerText = 'Ocultar ayuda'
+        } else {
+            decimalImage.style.display = 'none'
+            help.innerText = 'Mostrar ayuda'
         }
-        else {
-            message = "La respuesta no es correcta, intentos restantes " + lives;
-        }
-    } else {
-        message = "¡Fallaste!,  la respuesta correcta es: " + result;
-
-        lives = 3;
-        generateValues(true)
     }
-    contLives();
-    alert(message);
-    cleanAnswer();*/
 }

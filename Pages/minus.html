@@ -39,11 +39,10 @@
             <h3>=</h3>
             <input type="number" id="result" disabled>
         </div>
-
-        <span id="msj" class="msj">¡Excelente!</span>
-
+        <span id="msj" class="msj" hidden>¡Excelente!</span>
     </div>
-    <div class="numeric-keyboard">
+    <input type="button" value="Reintentar" id="refresh" onclick="restartOperation()">
+    <div class="numeric-keyboard" id="numeric-keyboard">
         <input type="button" class="number" value="0" id="zero" onclick="putValue('zero')">
         <input type="button" class="number" value="1" id="one" onclick="putValue('one')">
         <input type="button" class="number" value="2" id="two" onclick="putValue('two')">

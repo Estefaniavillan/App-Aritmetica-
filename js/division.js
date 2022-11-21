@@ -1,4 +1,4 @@
 function getOperation(){
     let result = x / y;
-    return result.toFixed(1);
+    return parseFloat(result.toFixed(1));
 }
