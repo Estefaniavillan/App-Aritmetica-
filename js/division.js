@@ -1,3 +1,4 @@
 function getOperation(){
-    return x / y;
+    let result = x / y;
+    return result.toFixed(1);
 }

@@ -9,14 +9,41 @@ function cleanAnswer() {
 }
 
 function checkResponse() {
+    var message = ""
+    let result = getOperation()
+    let resultUser = document.getElementById("result").value;
+    if (result == resultUser) {
+        message = "¡Bien hecho!";
+        lives = 3;
+    } else {
+        lives--;
+        message = "La respuesta es incorrecta, inténtalo de nuevo"
+        cleanAnswer()
+        contLives()
+    }
+    if (lives == 0){
+        message = "GAME OVER\n La respuesta correcta es: " + result;
+    }
+
+    document.getElementById("msj").innerText = message;
+
+
+
+
+
+
+
+
+
+
+/*
     lives--;
     var message = "";
-    let result = getOperation()
     if (lives >= 0) {
         if (result === +document.getElementById('result').value) {
             message = "Felicitaciones, la respuesta es correcta!";
             lives = 3;
-            genQuestion()
+            generateValues()
         }
         else {
             message = "La respuesta no es correcta, intentos restantes " + lives;
@@ -25,9 +52,9 @@ function checkResponse() {
         message = "¡Fallaste!,  la respuesta correcta es: " + result;
 
         lives = 3;
-        genQuestion()
+        generateValues(true)
     }
     contLives();
     alert(message);
-    cleanAnswer();
+    cleanAnswer();*/
 }
